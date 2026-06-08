@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Palace | Mi Carrito</title>
+
+    <!-- Importacion de GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Seteo de icono -->
+    <link rel="icon" href="/assets/icono.png">
+
+    <!-- Importacion de archivo CSS (Estilos) -->
+    <link rel="stylesheet" href="./carrito.css">
+
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <img id="icono-principal" src="../../assets/icono.png" alt="Logo Hamburguesería" />
+        <h1 id="titulo-principal">Burger Palace</h1>
+
+        <nav id="listado-opciones">
+            <a href="../../index.html">Inicio</a>
+            <a href="../../index.html#hamburguesas">Hamburguesas</a>
+            <a href="../../index.html#bebidas">Bebidas</a>
+            <a href="../../index.html#tragos">Tragos</a>
+            <a href="./carrito.html">Mi carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <table>
+    <thead>
+        <tr>
+            <th>Nombre del producto</th>
+            <th>Cantidad</th>
+            <th>Precio unitario</th>
+        </tr>
+    </thead>
+    <tbody id="tabla-carrito">
+    </tbody>   
+    </table> 
+    <input type="button" value="click" onclick="limpiarCarrito()" >
+    <p id="total"> Total a pagar </p>
+    </main>
+
+    
+
+    <footer>
+        <p>Todos los derechos reservados | Burger Palace 2026</p>
+    </footer>
+
+    <script src="./carrito.js"></script>
+</body>
+</html>

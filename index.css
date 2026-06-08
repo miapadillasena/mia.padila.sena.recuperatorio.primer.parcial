@@ -1,0 +1,204 @@
+/* --- Estilos generales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-optical-sizing: auto;
+    background-color: #161616; 
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+/* --- Estilos Header (encabezado) --- */
+header {
+    display: flex;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px #0000001a;
+    background-color: #000000; 
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#icono-principal {
+    width: 55px;
+    height: 55px;
+}
+
+#titulo-principal {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#listado-opciones {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-top: 15px;
+    gap: 20px; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FF7B00;
+
+}
+
+/* --- Estilos Main (contenido) --- */
+.h2-separador {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+} 
+
+.seccion-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.input-busqueda {
+    padding: 0.8rem 1.2rem; 
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc; 
+    max-width: 400px;
+    flex-grow: 1;
+
+}
+
+.btn-ordenar {
+    background-color: #FF7B00;
+    color: white; 
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    border: none; 
+    font-size: 1rem;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+
+}
+#listado-hamburguesas,
+#listado-bebidas,
+#listado-tragos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.li-hamburguesa {
+    background-color: #000000;
+    padding: 15px; 
+    margin: 15px; 
+    border-radius: 16px;
+
+}
+
+.li-bebida {
+    background-color: #000000;
+    padding: 15px;
+    margin: 15px; 
+    border-radius: 16px;
+ } 
+
+.li-tragos {
+    background-color: #000000;
+    padding: 15pX; 
+    margin: 15px; 
+    border-radius: 16px;
+}
+
+.img-producto {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+
+}
+
+.nombre-producto {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: white; 
+
+}
+
+.precio-producto {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ca9013; 
+}
+
+.descripcion-producto {
+    min-height: 110px;
+    max-height: 110px;
+    color: #808080; 
+    overflow: hidden; 
+
+ }
+
+.btn-sumar-a-carrito {
+    padding: 0.8rem 1.2rem;
+    margin: 15px auto 0;
+    background-color: green;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block; 
+    font-size: 1rem;
+    transition: background-color 0.3s; 
+    width: 100%;
+}
+
+.btn-sumar-a-carrito:hover {
+    background-color: darkgreen;
+}
+
+.btn-restar-a-carrito {
+    padding: 5px;
+    margin-top: 15px;
+    background-color: green;
+    border-radius: 8px;
+    border: none;
+    width: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    background-color: #000000; 
+}
